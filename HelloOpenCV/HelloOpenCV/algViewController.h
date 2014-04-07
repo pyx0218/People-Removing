@@ -9,8 +9,23 @@
 #import <UIKit/UIKit.h>
 
 @interface algViewController : UIViewController{
-    UIImage* image;
+    UIImage* image1;
+    UIImage* image2;
+    UIImage* image3;
+    UIImage* image4;
+    UIImage* image5;
+    UIImage* image6;
+    UIImage* image7;
+    UIImage* image8;
 }
-@property (weak, nonatomic) IBOutlet UIImageView *IViewer;
+@property (weak, nonatomic) IBOutlet UIImageView *IViewer1;
+@property (weak, nonatomic) IBOutlet UIImageView *IViewer2;
+@property (weak, nonatomic) IBOutlet UIImageView *IViewer3;
+@property (weak, nonatomic) IBOutlet UIImageView *IViewer4;
+@property (weak, nonatomic) IBOutlet UIImageView *IViewer5;
+@property (weak, nonatomic) IBOutlet UIImageView *IViewer6;
+@property (weak, nonatomic) IBOutlet UIImageView *IViewer7;
+@property (weak, nonatomic) IBOutlet UIImageView *IViewer8;
+@property (weak, nonatomic) IBOutlet UIImageView *IViewer9;
 
 @end

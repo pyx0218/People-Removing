@@ -7,7 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FB8714AB18CFE65B008A6859 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB8714AA18CFE65B008A6859 /* 2.jpg */; };
+		A86BDB1E18EB95090031C50A /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A86BDB1D18EB95090031C50A /* opencv2.framework */; };
+		A8821F6318F32FC6000C7CA4 /* IMG_0261.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8821F5B18F32FC6000C7CA4 /* IMG_0261.jpg */; };
+		A8821F6418F32FC6000C7CA4 /* IMG_0262.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8821F5C18F32FC6000C7CA4 /* IMG_0262.jpg */; };
+		A8821F6518F32FC6000C7CA4 /* IMG_0263.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8821F5D18F32FC6000C7CA4 /* IMG_0263.jpg */; };
+		A8821F6618F32FC6000C7CA4 /* IMG_0264.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8821F5E18F32FC6000C7CA4 /* IMG_0264.jpg */; };
+		A8821F6718F32FC6000C7CA4 /* IMG_0265.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8821F5F18F32FC6000C7CA4 /* IMG_0265.jpg */; };
+		A8821F6818F32FC6000C7CA4 /* IMG_0266.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8821F6018F32FC6000C7CA4 /* IMG_0266.jpg */; };
+		A8821F6918F32FC6000C7CA4 /* IMG_0267.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8821F6118F32FC6000C7CA4 /* IMG_0267.jpg */; };
+		A8821F6A18F32FC6000C7CA4 /* IMG_0268.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8821F6218F32FC6000C7CA4 /* IMG_0268.jpg */; };
 		FB99219718CFD6C10083E146 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB99219618CFD6C10083E146 /* Foundation.framework */; };
 		FB99219918CFD6C10083E146 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB99219818CFD6C10083E146 /* CoreGraphics.framework */; };
 		FB99219B18CFD6C10083E146 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB99219A18CFD6C10083E146 /* UIKit.framework */; };
@@ -23,14 +31,6 @@
 		FB9921BB18CFD6C10083E146 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB99219A18CFD6C10083E146 /* UIKit.framework */; };
 		FB9921C318CFD6C10083E146 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB9921C118CFD6C10083E146 /* InfoPlist.strings */; };
 		FB9921C518CFD6C10083E146 /* HelloOpenCVTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9921C418CFD6C10083E146 /* HelloOpenCVTests.m */; };
-		FB9921CF18CFD7D40083E146 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9921CE18CFD7D40083E146 /* opencv2.framework */; };
-		FBBD322218D0038700D8E60F /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBBD322118D0038700D8E60F /* 3.jpg */; };
-		FBBD322418D0040800D8E60F /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBBD322318D0040800D8E60F /* 4.jpg */; };
-		FBBD322618D0048300D8E60F /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBBD322518D0048300D8E60F /* 5.jpg */; };
-		FBBD322818D0052000D8E60F /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBBD322718D0052000D8E60F /* 6.jpg */; };
-		FBBD322A18D0059000D8E60F /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBBD322918D0059000D8E60F /* 7.jpg */; };
-		FBBD322C18D0061800D8E60F /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBBD322B18D0061800D8E60F /* 8.jpg */; };
-		FBBD322E18D00B8400D8E60F /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBBD322D18D00B8400D8E60F /* 9.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FB8714AA18CFE65B008A6859 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2.jpg; path = ../../../../Pictures/2.jpg; sourceTree = "<group>"; };
+		A86BDB1D18EB95090031C50A /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../../../../Programmes/opencv2.framework; sourceTree = "<group>"; };
+		A8821F5B18F32FC6000C7CA4 /* IMG_0261.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_0261.jpg; path = resources/IMG_0261.jpg; sourceTree = "<group>"; };
+		A8821F5C18F32FC6000C7CA4 /* IMG_0262.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_0262.jpg; path = resources/IMG_0262.jpg; sourceTree = "<group>"; };
+		A8821F5D18F32FC6000C7CA4 /* IMG_0263.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_0263.jpg; path = resources/IMG_0263.jpg; sourceTree = "<group>"; };
+		A8821F5E18F32FC6000C7CA4 /* IMG_0264.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_0264.jpg; path = resources/IMG_0264.jpg; sourceTree = "<group>"; };
+		A8821F5F18F32FC6000C7CA4 /* IMG_0265.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_0265.jpg; path = resources/IMG_0265.jpg; sourceTree = "<group>"; };
+		A8821F6018F32FC6000C7CA4 /* IMG_0266.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_0266.jpg; path = resources/IMG_0266.jpg; sourceTree = "<group>"; };
+		A8821F6118F32FC6000C7CA4 /* IMG_0267.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_0267.jpg; path = resources/IMG_0267.jpg; sourceTree = "<group>"; };
+		A8821F6218F32FC6000C7CA4 /* IMG_0268.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_0268.jpg; path = resources/IMG_0268.jpg; sourceTree = "<group>"; };
 		FB99219318CFD6C10083E146 /* HelloOpenCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloOpenCV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB99219618CFD6C10083E146 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FB99219818CFD6C10083E146 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -66,13 +74,6 @@
 		FB9921C218CFD6C10083E146 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FB9921C418CFD6C10083E146 /* HelloOpenCVTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloOpenCVTests.m; sourceTree = "<group>"; };
 		FB9921CE18CFD7D40083E146 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../libraries/opencv2.framework; sourceTree = "<group>"; };
-		FBBD322118D0038700D8E60F /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 3.jpg; path = ../../../../Pictures/3.jpg; sourceTree = "<group>"; };
-		FBBD322318D0040800D8E60F /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 4.jpg; path = ../../../../Pictures/4.jpg; sourceTree = "<group>"; };
-		FBBD322518D0048300D8E60F /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 5.jpg; path = ../../../../Pictures/5.jpg; sourceTree = "<group>"; };
-		FBBD322718D0052000D8E60F /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 6.jpg; path = ../../../../Pictures/6.jpg; sourceTree = "<group>"; };
-		FBBD322918D0059000D8E60F /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 7.jpg; path = ../../../../Pictures/7.jpg; sourceTree = "<group>"; };
-		FBBD322B18D0061800D8E60F /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 8.jpg; path = ../../../../Pictures/8.jpg; sourceTree = "<group>"; };
-		FBBD322D18D00B8400D8E60F /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 9.jpg; path = ../../../../Pictures/9.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB9921CF18CFD7D40083E146 /* opencv2.framework in Frameworks */,
+				A86BDB1E18EB95090031C50A /* opencv2.framework in Frameworks */,
 				FB99219918CFD6C10083E146 /* CoreGraphics.framework in Frameworks */,
 				FB99219B18CFD6C10083E146 /* UIKit.framework in Frameworks */,
 				FB99219718CFD6C10083E146 /* Foundation.framework in Frameworks */,
@@ -122,6 +123,7 @@
 		FB99219518CFD6C10083E146 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A86BDB1D18EB95090031C50A /* opencv2.framework */,
 				FB9921CE18CFD7D40083E146 /* opencv2.framework */,
 				FB99219618CFD6C10083E146 /* Foundation.framework */,
 				FB99219818CFD6C10083E146 /* CoreGraphics.framework */,
@@ -149,14 +151,14 @@
 		FB99219D18CFD6C10083E146 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FBBD322318D0040800D8E60F /* 4.jpg */,
-				FBBD322D18D00B8400D8E60F /* 9.jpg */,
-				FBBD322518D0048300D8E60F /* 5.jpg */,
-				FBBD322918D0059000D8E60F /* 7.jpg */,
-				FBBD322B18D0061800D8E60F /* 8.jpg */,
-				FBBD322718D0052000D8E60F /* 6.jpg */,
-				FBBD322118D0038700D8E60F /* 3.jpg */,
-				FB8714AA18CFE65B008A6859 /* 2.jpg */,
+				A8821F5B18F32FC6000C7CA4 /* IMG_0261.jpg */,
+				A8821F5C18F32FC6000C7CA4 /* IMG_0262.jpg */,
+				A8821F5D18F32FC6000C7CA4 /* IMG_0263.jpg */,
+				A8821F5E18F32FC6000C7CA4 /* IMG_0264.jpg */,
+				A8821F5F18F32FC6000C7CA4 /* IMG_0265.jpg */,
+				A8821F6018F32FC6000C7CA4 /* IMG_0266.jpg */,
+				A8821F6118F32FC6000C7CA4 /* IMG_0267.jpg */,
+				A8821F6218F32FC6000C7CA4 /* IMG_0268.jpg */,
 				FB99219E18CFD6C10083E146 /* HelloOpenCV-Info.plist */,
 				FB99219F18CFD6C10083E146 /* InfoPlist.strings */,
 				FB9921A218CFD6C10083E146 /* main.m */,
@@ -228,7 +230,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = alg;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Taikun Liu";
 				TargetAttributes = {
 					FB99219218CFD6C10083E146 = {
@@ -263,16 +265,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBBD322C18D0061800D8E60F /* 8.jpg in Resources */,
-				FBBD322818D0052000D8E60F /* 6.jpg in Resources */,
 				FB9921AD18CFD6C10083E146 /* Main_iPad.storyboard in Resources */,
-				FBBD322618D0048300D8E60F /* 5.jpg in Resources */,
-				FBBD322418D0040800D8E60F /* 4.jpg in Resources */,
+				A8821F6818F32FC6000C7CA4 /* IMG_0266.jpg in Resources */,
+				A8821F6418F32FC6000C7CA4 /* IMG_0262.jpg in Resources */,
+				A8821F6318F32FC6000C7CA4 /* IMG_0261.jpg in Resources */,
+				A8821F6918F32FC6000C7CA4 /* IMG_0267.jpg in Resources */,
+				A8821F6618F32FC6000C7CA4 /* IMG_0264.jpg in Resources */,
+				A8821F6718F32FC6000C7CA4 /* IMG_0265.jpg in Resources */,
+				A8821F6A18F32FC6000C7CA4 /* IMG_0268.jpg in Resources */,
 				FB9921B218CFD6C10083E146 /* Images.xcassets in Resources */,
-				FB8714AB18CFE65B008A6859 /* 2.jpg in Resources */,
-				FBBD322218D0038700D8E60F /* 3.jpg in Resources */,
-				FBBD322A18D0059000D8E60F /* 7.jpg in Resources */,
-				FBBD322E18D00B8400D8E60F /* 9.jpg in Resources */,
+				A8821F6518F32FC6000C7CA4 /* IMG_0263.jpg in Resources */,
 				FB9921AA18CFD6C10083E146 /* Main_iPhone.storyboard in Resources */,
 				FB9921A118CFD6C10083E146 /* InfoPlist.strings in Resources */,
 			);
@@ -357,7 +359,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -397,7 +398,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -436,6 +436,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/taikunliu/Documents/libraries,
+					/Users/panyanxi/Programmes,
 				);
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -455,6 +456,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/taikunliu/Documents/libraries,
+					/Users/panyanxi/Programmes,
 				);
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -468,7 +470,6 @@
 		FB9921CC18CFD6C10083E146 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HelloOpenCV.app/HelloOpenCV";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -491,7 +492,6 @@
 		FB9921CD18CFD6C10083E146 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HelloOpenCV.app/HelloOpenCV";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
