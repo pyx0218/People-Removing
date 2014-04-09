@@ -34,5 +34,7 @@
 
 - (IBAction)RecognitionPressed;
 - (IBAction)RemovePressed;
+- (IBAction)donePressed;
+- (IBAction)cancelPressed;
 
 @end

@@ -84,6 +84,16 @@ RemoveHelper *r;
     IViewer1.image = img;
 }
 
+- (IBAction)donePressed {
+    UIImage *img = [r getResultImage];
+    IViewer1.image = img;
+}
+
+- (IBAction)cancelPressed {
+    UIImage *img = [r resetResultImage];
+    IViewer1.image = img;
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

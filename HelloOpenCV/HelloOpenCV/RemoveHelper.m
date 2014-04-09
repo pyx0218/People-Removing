@@ -30,7 +30,9 @@
         //Set base and resource images and pedestrian arrays
         if(i == 0) {
             baseImg = cvImage;
+            resultImg = baseImg.clone();
             basePeds = found;
+            removed.assign(found.size(), false);
         }
         else {
             resImgs.push_back(cvImage);
@@ -91,8 +93,10 @@
 - (cv::Mat) displayPeds:(cv::Mat) img :(std::vector<cv::Rect>) peds {
     cv::Mat dispImg = img.clone();
     for(int i=0;i<peds.size();i++){
-        cv::Rect r = peds[i];
-        rectangle(dispImg, r.tl(), r.br(), cv::Scalar(0,255,0),4);
+        if(!removed[i]) {
+            cv::Rect r = peds[i];
+            rectangle(dispImg, r.tl(), r.br(), cv::Scalar(0,255,0),4);
+        }
     }
     return dispImg;
 }
@@ -101,6 +105,7 @@
     cv::Point p(x, y);
     for(int i=0; i<basePeds.size(); i++) {
         if(p.inside(basePeds[i])) {
+            removed[i] = true;
             return i;
         }
     }
@@ -119,7 +124,6 @@
     }
     
     cv::Rect rectRemove = basePeds[index];
-    resultImg = baseImg.clone();
     //small rectangle
     int dx = 10;
     int dy = 10;
@@ -180,7 +184,20 @@
         }
     }
     
+    cv::Mat dispImg = [self displayPeds:resultImg :basePeds];
+    return MatToUIImage(dispImg);
+}
+
+- (UIImage *) getResultImage {
     return MatToUIImage(resultImg);
+}
+
+- (UIImage *) resetResultImage {
+    resultImg = baseImg.clone();
+    removed.assign(basePeds.size(), false);
+    
+    cv::Mat dispImg = [self displayPeds:baseImg :basePeds];
+    return MatToUIImage(dispImg);
 }
 
 
