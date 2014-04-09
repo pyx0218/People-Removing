@@ -26,6 +26,7 @@
 		A8D0FFCA18F4DDB500C71372 /* IMG_0186.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8D0FFC518F4DDB500C71372 /* IMG_0186.jpg */; };
 		A8D0FFCB18F4DDB500C71372 /* IMG_0187.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8D0FFC618F4DDB500C71372 /* IMG_0187.jpg */; };
 		A8D0FFCC18F4DDB500C71372 /* IMG_0188.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8D0FFC718F4DDB500C71372 /* IMG_0188.jpg */; };
+		A8D0FFD118F5070300C71372 /* RemoveHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D0FFD018F5070300C71372 /* RemoveHelper.m */; };
 		FB99219718CFD6C10083E146 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB99219618CFD6C10083E146 /* Foundation.framework */; };
 		FB99219918CFD6C10083E146 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB99219818CFD6C10083E146 /* CoreGraphics.framework */; };
 		FB99219B18CFD6C10083E146 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB99219A18CFD6C10083E146 /* UIKit.framework */; };
@@ -73,6 +74,8 @@
 		A8D0FFC518F4DDB500C71372 /* IMG_0186.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0186.jpg; sourceTree = "<group>"; };
 		A8D0FFC618F4DDB500C71372 /* IMG_0187.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0187.jpg; sourceTree = "<group>"; };
 		A8D0FFC718F4DDB500C71372 /* IMG_0188.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0188.jpg; sourceTree = "<group>"; };
+		A8D0FFCF18F5070300C71372 /* RemoveHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoveHelper.h; sourceTree = "<group>"; };
+		A8D0FFD018F5070300C71372 /* RemoveHelper.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = RemoveHelper.m; sourceTree = "<group>"; };
 		FB99219318CFD6C10083E146 /* HelloOpenCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloOpenCV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB99219618CFD6C10083E146 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FB99219818CFD6C10083E146 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -86,14 +89,13 @@
 		FB9921A918CFD6C10083E146 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		FB9921AC18CFD6C10083E146 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		FB9921AE18CFD6C10083E146 /* algViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = algViewController.h; sourceTree = "<group>"; };
-		FB9921AF18CFD6C10083E146 /* algViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = algViewController.m; sourceTree = "<group>"; };
+		FB9921AF18CFD6C10083E146 /* algViewController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = algViewController.m; sourceTree = "<group>"; };
 		FB9921B118CFD6C10083E146 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FB9921B718CFD6C10083E146 /* HelloOpenCVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloOpenCVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9921B818CFD6C10083E146 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		FB9921C018CFD6C10083E146 /* HelloOpenCVTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelloOpenCVTests-Info.plist"; sourceTree = "<group>"; };
 		FB9921C218CFD6C10083E146 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FB9921C418CFD6C10083E146 /* HelloOpenCVTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloOpenCVTests.m; sourceTree = "<group>"; };
-		FB9921CE18CFD7D40083E146 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../libraries/opencv2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,7 +146,6 @@
 			isa = PBXGroup;
 			children = (
 				A86BDB1D18EB95090031C50A /* opencv2.framework */,
-				FB9921CE18CFD7D40083E146 /* opencv2.framework */,
 				FB99219618CFD6C10083E146 /* Foundation.framework */,
 				FB99219818CFD6C10083E146 /* CoreGraphics.framework */,
 				FB99219A18CFD6C10083E146 /* UIKit.framework */,
@@ -162,6 +163,8 @@
 				FB9921AB18CFD6C10083E146 /* Main_iPad.storyboard */,
 				FB9921AE18CFD6C10083E146 /* algViewController.h */,
 				FB9921AF18CFD6C10083E146 /* algViewController.m */,
+				A8D0FFCF18F5070300C71372 /* RemoveHelper.h */,
+				A8D0FFD018F5070300C71372 /* RemoveHelper.m */,
 				FB9921B118CFD6C10083E146 /* Images.xcassets */,
 				FB99219D18CFD6C10083E146 /* Supporting Files */,
 			);
@@ -338,6 +341,7 @@
 				FB9921B018CFD6C10083E146 /* algViewController.m in Sources */,
 				FB9921A318CFD6C10083E146 /* main.m in Sources */,
 				FB9921A718CFD6C10083E146 /* algAppDelegate.m in Sources */,
+				A8D0FFD118F5070300C71372 /* RemoveHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
