@@ -29,14 +29,14 @@ using namespace cv;
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     NSMutableArray *images = [[NSMutableArray alloc] init];
-    [images addObject:[UIImage imageNamed:@"IMG_0263.jpg"] ];
-    [images addObject:[UIImage imageNamed:@"IMG_0261.jpg"] ];
-    [images addObject:[UIImage imageNamed:@"IMG_0262.jpg"] ];
-    [images addObject:[UIImage imageNamed:@"IMG_0264.jpg"] ];
-    [images addObject:[UIImage imageNamed:@"IMG_0265.jpg"] ];
-    [images addObject:[UIImage imageNamed:@"IMG_0266.jpg"] ];
-    [images addObject:[UIImage imageNamed:@"IMG_0267.jpg"] ];
-    [images addObject:[UIImage imageNamed:@"IMG_0268.jpg"] ];
+    [images addObject:[UIImage imageNamed:@"IMG_0184.jpg"] ];
+    [images addObject:[UIImage imageNamed:@"IMG_0185.jpg"] ];
+    [images addObject:[UIImage imageNamed:@"IMG_0186.jpg"] ];
+    [images addObject:[UIImage imageNamed:@"IMG_0187.jpg"] ];
+    [images addObject:[UIImage imageNamed:@"IMG_0188.jpg"] ];
+    //[images addObject:[UIImage imageNamed:@"IMG_0216.jpg"] ];
+    //[images addObject:[UIImage imageNamed:@"IMG_0217.jpg"] ];
+    //[images addObject:[UIImage imageNamed:@"IMG_0268.jpg"] ];
 
     NSLog(@"%d\n",[images count]);
     
@@ -105,26 +105,56 @@ using namespace cv;
     //2. find rectangles that are not intersects
     //3. copy images.
     cv::Rect rectRemove = basePeds[index];
+    //small rectangle
+    int dx = 10;
+    int dy = 10;
     
-    for (int i=0;i<resImgs.size();i++)
-    {
-        cv::Mat cvImg = resImgs[i];
-        std::vector<cv::Rect> peds = resPeds[i];
-        bool interb=false;
-        for(int j=0; j<peds.size(); j++) {
-            cv::Rect rectReplace = peds[j];
-            cv::Rect inter = rectRemove & rectReplace;
-            if(inter.width!=0)
-            {
-                interb=true;
-                //copy content from img2 to img1
-                //NSLog(@"rectangle i is %d tx is %d ty is %d w is %d h is %d\n bx is %d and by is %d \n",i,r2.tl().x,r2.tl().y,r2.width,r2.height,r2.br().x,r2.br().y);
-            }
+    int cntx = rectRemove.width/dx;
+    int cnty = rectRemove.height/dy;
+    int modx = rectRemove.width%dx;
+    int mody = rectRemove.height%dy;
+    
+    int w = 0;
+    int h = 0;
+    
+    for (int k=0; k<=cnty; k++) {
+        if(k == cnty) {
+            if(mody == 0) break;
+            else h = mody;
         }
-        if(!interb)
-        {
-            cvImg(rectRemove).copyTo(baseImg(rectRemove));
-            break;
+        else {
+            h = dy;
+        }
+        for (int l=0; l<=cntx; l++) {
+            if(l == cntx) {
+                if(modx == 0) break;
+                else w = modx;
+            }
+            else {
+                w = dx;
+            }
+            cv::Rect smallr(rectRemove.tl().x+l*dx, rectRemove.tl().y+k*dy, w, h);
+            for (int i=0;i<resImgs.size();i++)
+            {
+                cv::Mat cvImg = resImgs[i];
+                std::vector<cv::Rect> peds = resPeds[i];
+                bool interb=false;
+                for(int j=0; j<peds.size(); j++) {
+                    cv::Rect rectReplace = peds[j];
+                    cv::Rect inter = smallr & rectReplace;
+                    if(inter.width!=0)
+                    {
+                        interb=true;
+                        //copy content from img2 to img1
+                        //NSLog(@"rectangle i is %d tx is %d ty is %d w is %d h is %d\n bx is %d and by is %d \n",i,r2.tl().x,r2.tl().y,r2.width,r2.height,r2.br().x,r2.br().y);
+                    }
+                }
+                if(!interb)
+                {
+                    cvImg(smallr).copyTo(baseImg(smallr));
+                    break;
+                }
+            }
         }
     }
 }
