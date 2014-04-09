@@ -18,10 +18,19 @@
     cv::Mat resultImg;
 }
 
+/*RemoveHelper *r = [[RemoveHelper alloc] initWithImages:images];*/
 - (id)initWithImages:(NSMutableArray *) images;
+
+/*Recognize all pedestrains in all pictures, choose the base image, display rectangles*/
 - (UIImage *) doRecognition;
+
+/*Remove the pedestrian given a point*/
 - (UIImage *) removePedestrian:(double) x :(double) y;
+
+/*Get result image*/
 - (UIImage *) getResultImage;
+
+/*Reverse all change*/
 - (UIImage *) resetResultImage;
 
 @end
