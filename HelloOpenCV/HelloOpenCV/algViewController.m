@@ -32,15 +32,23 @@ RemoveHelper *r;
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     NSMutableArray *images = [[NSMutableArray alloc] init];
-    [images addObject:[UIImage imageNamed:@"IMG_0184.jpg"] ];
-    [images addObject:[UIImage imageNamed:@"IMG_0185.jpg"] ];
-    [images addObject:[UIImage imageNamed:@"IMG_0186.jpg"] ];
-    [images addObject:[UIImage imageNamed:@"IMG_0187.jpg"] ];
-    [images addObject:[UIImage imageNamed:@"IMG_0188.jpg"] ];
-    //[images addObject:[UIImage imageNamed:@"IMG_0216.jpg"] ];
-    //[images addObject:[UIImage imageNamed:@"IMG_0217.jpg"] ];
-    //[images addObject:[UIImage imageNamed:@"IMG_0268.jpg"] ];
-
+//    [images addObject:[UIImage imageNamed:@"IMG_0184.jpg"] ];
+//    [images addObject:[UIImage imageNamed:@"IMG_0185.jpg"] ];
+//    [images addObject:[UIImage imageNamed:@"IMG_0186.jpg"] ];
+//    [images addObject:[UIImage imageNamed:@"IMG_0187.jpg"] ];
+//    [images addObject:[UIImage imageNamed:@"IMG_0188.jpg"] ];
+    [images addObject:[UIImage imageNamed:@"IMG_0214.jpg"] ];
+    [images addObject:[UIImage imageNamed:@"IMG_0215.jpg"] ];
+    [images addObject:[UIImage imageNamed:@"IMG_0216.jpg"] ];
+    [images addObject:[UIImage imageNamed:@"IMG_0217.jpg"] ];
+//    [images addObject:[UIImage imageNamed:@"IMG_0262.jpg"] ];
+//    [images addObject:[UIImage imageNamed:@"IMG_0263.jpg"] ];
+//    [images addObject:[UIImage imageNamed:@"IMG_0264.jpg"] ];
+//    [images addObject:[UIImage imageNamed:@"IMG_0265.jpg"] ];
+//    [images addObject:[UIImage imageNamed:@"IMG_0266.jpg"] ];
+//    [images addObject:[UIImage imageNamed:@"IMG_0267.jpg"] ];
+//    [images addObject:[UIImage imageNamed:@"IMG_0268.jpg"] ];
+    
     NSLog(@"%d\n",[images count]);
     
 //    NSMutableArray *iviewers = [[NSMutableArray alloc] init];
@@ -61,7 +69,18 @@ RemoveHelper *r;
 }
 
 - (IBAction)RecognitionPressed {
-    UIImage *img = [r doRecognition];
+    [r doRecognition];
+    UIImage *img = [r getBaseImg];
+    IViewer1.image = img;
+}
+
+- (IBAction)DetectMovingPressed {
+    
+}
+
+- (IBAction)DetectPedestrianPressed {
+    [r detectPedestrian];
+    UIImage *img = [r getBaseImg];
     IViewer1.image = img;
 }
 
@@ -70,17 +89,14 @@ RemoveHelper *r;
     UITouch *aTouch = [touches anyObject];
     CGPoint point = [aTouch locationInView:aTouch.view];
     NSLog(@"%f, %f\n", point.x, point.y);
-    UIImage *img = [r removePedestrian:point.x :point.y];
-    IViewer1.image = img;
+    //UIImage *img = [r removePedestrian:point.x :point.y];
+    //IViewer1.image = img;
     // point.x and point.y have the coordinates of the touch
 }
 
 - (IBAction)RemovePressed {
-    double x = [xvalue.text doubleValue];
-    double y = [yvalue.text doubleValue];
-    
-    NSLog(@"%f, %f\n", x, y);
-    UIImage *img = [r removePedestrian:x :y];
+    int index = [indexvalue.text intValue];
+    UIImage *img = [r remove:index];
     IViewer1.image = img;
 }
 

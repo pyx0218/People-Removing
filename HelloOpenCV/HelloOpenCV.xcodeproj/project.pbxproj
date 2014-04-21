@@ -26,7 +26,7 @@
 		A8D0FFCA18F4DDB500C71372 /* IMG_0186.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8D0FFC518F4DDB500C71372 /* IMG_0186.jpg */; };
 		A8D0FFCB18F4DDB500C71372 /* IMG_0187.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8D0FFC618F4DDB500C71372 /* IMG_0187.jpg */; };
 		A8D0FFCC18F4DDB500C71372 /* IMG_0188.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8D0FFC718F4DDB500C71372 /* IMG_0188.jpg */; };
-		A8D0FFD118F5070300C71372 /* RemoveHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D0FFD018F5070300C71372 /* RemoveHelper.m */; };
+		A8D0FFD118F5070300C71372 /* RemoveHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D0FFD018F5070300C71372 /* RemoveHelper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		FB99219718CFD6C10083E146 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB99219618CFD6C10083E146 /* Foundation.framework */; };
 		FB99219918CFD6C10083E146 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB99219818CFD6C10083E146 /* CoreGraphics.framework */; };
 		FB99219B18CFD6C10083E146 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB99219A18CFD6C10083E146 /* UIKit.framework */; };
@@ -35,7 +35,7 @@
 		FB9921A718CFD6C10083E146 /* algAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9921A618CFD6C10083E146 /* algAppDelegate.m */; };
 		FB9921AA18CFD6C10083E146 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB9921A818CFD6C10083E146 /* Main_iPhone.storyboard */; };
 		FB9921AD18CFD6C10083E146 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB9921AB18CFD6C10083E146 /* Main_iPad.storyboard */; };
-		FB9921B018CFD6C10083E146 /* algViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9921AF18CFD6C10083E146 /* algViewController.m */; };
+		FB9921B018CFD6C10083E146 /* algViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9921AF18CFD6C10083E146 /* algViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		FB9921B218CFD6C10083E146 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB9921B118CFD6C10083E146 /* Images.xcassets */; };
 		FB9921B918CFD6C10083E146 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9921B818CFD6C10083E146 /* XCTest.framework */; };
 		FB9921BA18CFD6C10083E146 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB99219618CFD6C10083E146 /* Foundation.framework */; };
@@ -482,10 +482,9 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/taikunliu/Documents/libraries,
 					/Users/panyanxi/Programmes,
 				);
-				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_INPUT_FILETYPE = automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloOpenCV/HelloOpenCV-Prefix.pch";
 				INFOPLIST_FILE = "HelloOpenCV/HelloOpenCV-Info.plist";
@@ -504,10 +503,9 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/taikunliu/Documents/libraries,
 					/Users/panyanxi/Programmes,
 				);
-				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_INPUT_FILETYPE = automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloOpenCV/HelloOpenCV-Prefix.pch";
 				INFOPLIST_FILE = "HelloOpenCV/HelloOpenCV-Info.plist";

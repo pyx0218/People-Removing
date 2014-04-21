@@ -14,23 +14,35 @@
     std::vector<cv::Rect> basePeds;
     std::vector<bool> removed;
     std::vector<cv::Mat> resImgs;
-    std::vector<std::vector<cv::Rect>> resPeds;
+    std::vector<std::vector<Byte>> resPedsStack;
+    std::vector<cv::Mat> homos;
     cv::Mat resultImg;
 }
 
-/*RemoveHelper *r = [[RemoveHelper alloc] initWithImages:images];*/
+/* RemoveHelper *r = [[RemoveHelper alloc] initWithImages:images];
+ * Recognize all pedestrains in all pictures, choose the base image
+ */
 - (id)initWithImages:(NSMutableArray *) images;
 
-/*Recognize all pedestrains in all pictures, choose the base image, display rectangles*/
-- (UIImage *) doRecognition;
+- (void) doRecognition;
 
-/*Remove the pedestrian given a point*/
-- (UIImage *) removePedestrian:(double) x :(double) y;
+/*Return the base image with rectangles*/
+-(UIImage *) getBaseImg;
+
+/*Return the rectangle array of base image*/
+-(NSMutableArray *) getBasePedestians;
+
+/*Remove the pedestrian given a index array*/
+- (UIImage *) removePedestrian:(NSMutableArray *) indexArray;
 
 /*Get result image*/
 - (UIImage *) getResultImage;
 
 /*Reverse all change*/
 - (UIImage *) resetResultImage;
+
+- (void) detectPedestrian;
+
+- (UIImage *)remove:(int) index;
 
 @end

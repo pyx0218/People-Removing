@@ -18,21 +18,22 @@
     UIImage* image7;
     UIImage* image8;
     
-    IBOutlet UITextField *xvalue;
-    IBOutlet UITextField *yvalue;
+    IBOutlet UITextField *indexvalue;
     
 }
-@property (weak, nonatomic) IBOutlet UIImageView *IViewer1;
-@property (weak, nonatomic) IBOutlet UIImageView *IViewer2;
-@property (weak, nonatomic) IBOutlet UIImageView *IViewer3;
-@property (weak, nonatomic) IBOutlet UIImageView *IViewer4;
-@property (weak, nonatomic) IBOutlet UIImageView *IViewer5;
-@property (weak, nonatomic) IBOutlet UIImageView *IViewer6;
-@property (weak, nonatomic) IBOutlet UIImageView *IViewer7;
-@property (weak, nonatomic) IBOutlet UIImageView *IViewer8;
-@property (weak, nonatomic) IBOutlet UIImageView *IViewer9;
+@property (strong, nonatomic) IBOutlet UIImageView *IViewer1;
+@property (strong, nonatomic) IBOutlet UIImageView *IViewer2;
+@property (strong, nonatomic) IBOutlet UIImageView *IViewer3;
+@property (strong, nonatomic) IBOutlet UIImageView *IViewer4;
+@property (strong, nonatomic) IBOutlet UIImageView *IViewer5;
+@property (strong, nonatomic) IBOutlet UIImageView *IViewer6;
+@property (strong, nonatomic) IBOutlet UIImageView *IViewer7;
+@property (strong, nonatomic) IBOutlet UIImageView *IViewer8;
+@property (strong, nonatomic) IBOutlet UIImageView *IViewer9;
 
 - (IBAction)RecognitionPressed;
+- (IBAction)DetectMovingPressed;
+- (IBAction)DetectPedestrianPressed;
 - (IBAction)RemovePressed;
 - (IBAction)donePressed;
 - (IBAction)cancelPressed;
